@@ -1,0 +1,15 @@
+module;
+
+#include <c++/12/iostream>
+
+export module MyModule;
+
+int hidden()
+{
+    return 42;
+}
+
+export void printMessage()
+{
+    std::cout << "The hidden value is " << hidden() << "\n";
+}
